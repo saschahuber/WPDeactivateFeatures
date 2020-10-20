@@ -1,6 +1,6 @@
 <?
 /**
- * Plugin Name: WPPerformance
+ * Plugin Name: WP Performance
  * Plugin URI: https://sascha-huber.com/projekte/wp-performance
  * Text Domain: wp-performance
  * Domain Path: /languages
