@@ -27,7 +27,7 @@ class WPPerformanceSettings{
 				'type' => 'bool',
 				'default' => false,
 			);
-			register_setting( 'wp-performance-settings-group', 'wp_performance_'.$option['option_key'], $args ); 
+			register_setting( 'wp-deactivate-features-settings-group', 'wp_deactivate_features_'.$option['option_key'], $args ); 
 		}
 	}
 	
@@ -37,8 +37,8 @@ class WPPerformanceSettings{
 		foreach($options as $option){
 			?>
 				<tr valign="top">
-				<th scope="row"><? echo __($option['title'], 'wp-performance'); ?><? echo $option['recommended'] ? ' ('.__('Recommended', 'wp-performance').')':''; ?></th>
-				<td><input type="checkbox" name="wp_performance_<? echo $option['option_key']; ?>" <?php echo get_option('wp_performance_'.$option['option_key'])?'checked':''; ?> /></td>
+				<th scope="row"><? echo __($option['title'], 'wp-deactivate-features'); ?><? echo $option['recommended'] ? ' ('.__('Recommended', 'wp-deactivate-features').')':''; ?></th>
+				<td><input type="checkbox" name="wp_deactivate_features_<? echo $option['option_key']; ?>" <?php echo get_option('wp_deactivate_features_'.$option['option_key'])?'checked':''; ?> /></td>
 				</tr>
 			<?
 		}
@@ -47,7 +47,7 @@ class WPPerformanceSettings{
 	private function get_plugin_info(){
 		?>
 		
-		<?php echo __('Check the features, that should be disabled.', 'wp-performance'); ?>
+		<?php echo __('Check the features, that should be disabled.', 'wp-deactivate-features'); ?>
 		
 		<?
 	}
@@ -60,8 +60,8 @@ class WPPerformanceSettings{
 			<?php $this->get_plugin_info(); ?>
 
 			<form method="post" action="options.php">
-				<?php settings_fields( 'wp-performance-settings-group' ); ?>
-				<?php do_settings_sections( 'wp-performance-settings-group' ); ?>
+				<?php settings_fields( 'wp-deactivate-features-settings-group' ); ?>
+				<?php do_settings_sections( 'wp-deactivate-features-settings-group' ); ?>
 				<table class="form-table">
 					<?php $this->display_checkbox_options(); ?>
 				</table>
@@ -74,7 +74,7 @@ class WPPerformanceSettings{
 }
 
 if( is_admin() ){
-    $wp_performance_settings = new WPPerformanceSettings();
+    $wp_deactivate_features_settings = new WPPerformanceSettings();
 }
 
 ?>

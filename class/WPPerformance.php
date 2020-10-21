@@ -20,7 +20,7 @@ class WPPerformance{
 	public function init_deactivations(){
 		$options = $this->options_provider->get_options_bool();
 		foreach($options as $option){
-			if(get_option('wp_performance_'.$option['option_key'])){
+			if(get_option('wp_deactivate_features_'.$option['option_key'])){
 				$object = new $option['class']();
 			}
 		}
