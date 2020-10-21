@@ -1,6 +1,6 @@
 <?php
 
-class WPPerformanceSettings{
+class WPDF_Settings{
 	/**
      * Holds the values to be used in the fields callbacks
      */
@@ -10,7 +10,7 @@ class WPPerformanceSettings{
      * Start up
      */
     public function __construct(){
-		$this->options_provider = new WPPerformanceOptionsProvider();
+		$this->options_provider = new WPDF_OptionsProvider();
         add_action( 'admin_menu', array( $this, 'add_plugin_page' ) );
         add_action( 'admin_init', array( $this, 'page_init' ) );
     }
@@ -74,7 +74,7 @@ class WPPerformanceSettings{
 }
 
 if( is_admin() ){
-    $wp_deactivate_features_settings = new WPPerformanceSettings();
+    $wp_deactivate_features_settings = new WPDF_Settings();
 }
 
 ?>

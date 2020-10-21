@@ -1,6 +1,6 @@
 <?php
 
-class WPCommentsDeactivator{
+class WPDF_CommentsDeactivator{
 	/**
      * Start up
      */

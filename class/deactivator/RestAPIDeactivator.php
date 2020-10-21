@@ -1,6 +1,6 @@
 <?php
 
-class WPRestAPIDeactivator{
+class WPDF_RestAPIDeactivator{
 	/**
      * Start up
      */

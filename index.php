@@ -15,15 +15,15 @@ function wp_deactivate_features_load_plugin_textdomain() {
 }
 add_action( 'plugins_loaded', 'wp_deactivate_features_load_plugin_textdomain' );
 
-include('class/WPPerformanceOptionsProvider.php');
-include('class/WPPerformance.php');
-include('class/WPPerformanceSettings.php');
+include('class/OptionsProvider.php');
+include('class/DeactivationExecutor.php');
+include('class/Settings.php');
 
-include('class/deactivator/WPEmojiDeactivator.php');
-include('class/deactivator/WPHeartbeatDeactivator.php');
-include('class/deactivator/WPCommentsDeactivator.php');
-include('class/deactivator/WPRssFeedDeactivator.php');
-include('class/deactivator/WPRestAPIDeactivator.php');
-include('class/deactivator/WPPingbackDeactivator.php');
+include('class/deactivator/EmojiDeactivator.php');
+include('class/deactivator/HeartbeatDeactivator.php');
+include('class/deactivator/CommentsDeactivator.php');
+include('class/deactivator/RssFeedDeactivator.php');
+include('class/deactivator/RestAPIDeactivator.php');
+include('class/deactivator/PingbackDeactivator.php');
 
 ?>

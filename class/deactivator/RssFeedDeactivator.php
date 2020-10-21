@@ -1,6 +1,6 @@
 <?php
 
-class WPRssFeedDeactivator{
+class WPDF_RssFeedDeactivator{
 	/**
      * Start up
      */

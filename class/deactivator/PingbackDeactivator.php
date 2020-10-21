@@ -1,6 +1,6 @@
 <?php
 
-class WPPingbackDeactivator{
+class WPDF_PingbackDeactivator{
 	/**
      * Start up
      */

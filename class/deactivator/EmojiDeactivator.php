@@ -1,6 +1,6 @@
 <?php
 
-class WPEmojiDeactivator{
+class WPDF_EmojiDeactivator{
 	/**
      * Start up
      */

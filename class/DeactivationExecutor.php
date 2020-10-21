@@ -1,6 +1,6 @@
 <?php
 
-class WPPerformance{
+class WPDF_DeactivationExecutor{
 	/**
      * Holds the values to be used in the fields callbacks
      */
@@ -10,7 +10,7 @@ class WPPerformance{
      * Start up
      */
     public function __construct(){
-		$this->options_provider = new WPPerformanceOptionsProvider();
+		$this->options_provider = new WPDF_OptionsProvider();
 		add_action('init', array( $this, 'init_deactivations'));
     }
 	
@@ -27,6 +27,6 @@ class WPPerformance{
 	}
 }
 
-$wp_performance = new WPPerformance();
+$wp_performance = new WPDF_DeactivationExecutor();
 
 ?>

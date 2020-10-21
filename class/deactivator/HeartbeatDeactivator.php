@@ -1,6 +1,6 @@
 <?php
 
-class WPHeartbeatDeactivator{
+class WPDF_HeartbeatDeactivator{
 	/**
      * Start up
      */
