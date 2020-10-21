@@ -1,4 +1,4 @@
-=== WP Performance - Deactivate unneeded functions ===
+=== WP Performance ===
 Contributors: @saschahuber
 Donate link: https://sascha-huber.com
 Tags: performance, disable, deactivate
