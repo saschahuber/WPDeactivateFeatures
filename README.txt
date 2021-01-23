@@ -1,5 +1,5 @@
 === WP Deactivate Features ===
-Contributors: @saschahuber
+Contributors: saschahuber
 Donate link: https://sascha-huber.com
 Tags: performance, disable, deactivate, features
 Requires at least: 5.1
