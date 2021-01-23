@@ -13,7 +13,7 @@ WP Deactivate Features lets you deactivate unneeded functions to improve your we
  
 == Description ==
 
-WP Performance lets you deactivate unneeded functions to improve your websites performance.
+WP Deactivate Features lets you deactivate unneeded functions to improve your websites performance.
 Features that can be disabled:
 * Emojis
 * Comments

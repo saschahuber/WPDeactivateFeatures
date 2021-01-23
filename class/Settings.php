@@ -17,7 +17,7 @@ class WPDF_Settings{
 	
 	public function add_plugin_page() {
 		//create new top-level menu
-		add_menu_page('WP Performance', 'WP Performance', 'administrator', __FILE__, array($this, 'settings_page_display') , plugins_url('/images/icon.png', __FILE__) );
+		add_menu_page('WP Deactivate Features', 'WP Deactivate Features', 'administrator', __FILE__, array($this, 'settings_page_display') , plugins_url('/images/icon.png', __FILE__) );
 	}
 	
 	public function page_init() {
@@ -55,7 +55,7 @@ class WPDF_Settings{
 	public function settings_page_display() {
 		?>
 		<div class="wrap">
-			<h1>WP Performance</h1>
+			<h1>WP Deactivate Features</h1>
 
 			<?php $this->get_plugin_info(); ?>
 
